@@ -44,7 +44,7 @@ do
           $fPrefix = "msgtrace-"
           $dString = get-date -f yyyy-MM-dd-hh
           $ext = ".csv"
-      $CurrMessages | Export-Csv "$uDir$fPrefix$dString$ext" -NoTypeInformation
+          $CurrMessages | Export-Csv "$uDir$fPrefix$dString$ext" -NoTypeInformation
       }
     $Page++ 
     $Messages += $CurrMessages 
